@@ -43,9 +43,9 @@ void merge(int arr[], int l, int m, int r)
 	for (j = 0; j < n2; j++)
 	R[j] = arr[m + 1+ j];
 
-	i = 0; // Initial index of first subarray
-	j = 0; // Initial index of second subarray
-	k = l; // Initial index of merged subarray
+	i = 0; 
+	j = 0; 
+	k = l; 
 	while (i < n1 && j < n2)
 {
 	if (L[i] <= R[j])
@@ -75,7 +75,7 @@ void merge(int arr[], int l, int m, int r)
 	k++;
 }
 	deAlloc(L);
-	DeAlloc(R);
+	deAlloc(R);
 }
 void mergeSort(int pData[], int l, int r)
 {
